@@ -71,27 +71,3 @@ def get_density_model():
     weights=torch.load(weights_path,map_location="cpu")
     model.load_state_dict(weights)
     return model
-
-@st.cache_resource
-def get_pothole_model():
-    model=ssdlite320_mobilenet_v3_large(weights=None,weights_backbone=None)
-    in_channels=det_utils.retrieve_out_channels(model.backbone,(480,480))
-    num_anchors=model.anchor_generator.num_anchors_per_location()
-    model.head=SSDHead(in_channels=in_channels,num_anchors=num_anchors,
-                       num_classes=2)
-    weights_path=os.path.join(weights_dir,"pothole_model.pth")
-    weights=torch.load(weights_path,map_location="cpu")
-    model.load_state_dict(weights)
-    return model
-
-@st.cache_resource
-def get_category_model():
-    model=ssdlite320_mobilenet_v3_large(weights=None,weights_backbone=None)
-    in_channels=det_utils.retrieve_out_channels(model.backbone,(320,320))
-    num_anchors=model.anchor_generator.num_anchors_per_location()
-    model.head=SSDHead(in_channels=in_channels,num_anchors=num_anchors,
-                       num_classes=9)
-    weights_path=os.path.join(weights_dir,"vehicle_categorization.pth")
-    weights=torch.load(weights_path,map_location="cpu")
-    model.load_state_dict(weights)
-    return model
