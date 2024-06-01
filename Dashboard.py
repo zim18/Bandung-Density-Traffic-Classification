@@ -4,17 +4,17 @@ from PIL import Image
 import cv2
 import numpy as np
 
-
 root_dir=os.path.dirname(os.path.abspath(__file__))
 homepage_img_dir=os.path.join(root_dir,"images","home_page")
 st.title("Klasifikasi Kepadatan Lalu Lintas dengan Model Convolutional Neural Network Menggunakan Arsitektur EfficientNet ")
-# col1,col2,col3=st.columns([1,3,1])
-# with col2:
-st.subheader(""" Kelompok 1
-                 
-                """)    
-
+st.subheader(""" Kelompok 1""")    
+st.markdown("""
+            - Adrian Putra Pratama Badjideh (1305213041)
+            - Ade Kurniawan (1305210002)
+            - Abror Muhammad Hazim (1305213026)""")
 st.write("**Kemacetan merupakan situasi atau keadaan tersenatnya yang ditandai dengan menurunnya kecepatan perjalanan dari kecepatan yang seharusnya atau bahkan terhentinya lalu lintas yang disebabkan oleh banyaknya jumlah lalu lintas kendaraan yang melebihih kapasitas jalan.**")
+st.subheader("Langkah Melakukan Prediksi")
+
 # st.markdown("""
 #             - Traffic flows smoothly and efficiently.
 #             - Roads are well maintained and safe for all users, including pedestrians and cyclists.
