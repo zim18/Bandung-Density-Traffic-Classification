@@ -67,7 +67,7 @@ def get_density_model():
     model=efficientnet_b0(weights=None)
     in_features=model.classifier[1].in_features
     model.classifier[1]=nn.Linear(in_features=in_features,out_features=5)
-    weights_path=os.path.join(weights_dir,"model_weights.pth")
+    weights_path=os.path.join(weights_dir,"ModelParameter.pth")
     weights=torch.load(weights_path,map_location="cpu")
     model.load_state_dict(weights)
     return model
