@@ -13,16 +13,16 @@ with col2:
     st.markdown(""" Kelompok 1""")    
 
 st.write("**Kemacetan merupakan situasi atau keadaan tersenatnya yang ditandai dengan menurunnya kecepatan perjalanan dari kecepatan yang seharusnya atau bahkan terhentinya lalu lintas yang disebabkan oleh banyaknya jumlah lalu lintas kendaraan yang melebihih kapasitas jalan.**")
-st.markdown("""
-            - Traffic flows smoothly and efficiently.
-            - Roads are well maintained and safe for all users, including pedestrians and cyclists.
-            - Congestion, local pollution and accidents are minimized.
-            - Vehicles are within speed limits and heading in correct direction along lane.""")
-st.markdown("""**In this project we aim to provide smart solutions to address problems associated with Traffic Management**""")
-st.markdown("""
-            - Vehicle Category Classification and Detection.
-            - Traffic Density Classification.
-            - Pothole Object Detection.""")
+# st.markdown("""
+#             - Traffic flows smoothly and efficiently.
+#             - Roads are well maintained and safe for all users, including pedestrians and cyclists.
+#             - Congestion, local pollution and accidents are minimized.
+#             - Vehicles are within speed limits and heading in correct direction along lane.""")
+# st.markdown("""**In this project we aim to provide smart solutions to address problems associated with Traffic Management**""")
+# st.markdown("""
+#             - Vehicle Category Classification and Detection.
+#             - Traffic Density Classification.
+#             - Pothole Object Detection.""")
 # st.write(" ")
 # st.subheader("Vehicle Category Classification and Detection")
 # col1,col2=st.columns(2)
