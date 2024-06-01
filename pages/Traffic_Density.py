@@ -12,9 +12,6 @@ st.title("Traffic Density Classification")
 classes=['Empty', 'High', 'Low', 'Medium', 'Traffic Jam']
 model=get_density_model()
 model.eval()
-dirname=os.path.dirname(os.path.abspath(__file__))
-root_dir=os.path.join(dirname,os.pardir)
-density_img_dir=os.path.join(root_dir,"images","density_img")
 
 file=st.file_uploader("Input Image File",type = ['jpg','png','jpeg'])
 button=st.button("Detect")
