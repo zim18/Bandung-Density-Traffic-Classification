@@ -13,7 +13,7 @@ classes=['Empty', 'High', 'Low', 'Medium', 'Traffic Jam']
 model=get_density_model()
 model.eval()
 
-file=st.file_uploader("Input Image File",type = ['jpg','png','jpeg'])
+file=st.file_uploader("Input Image File",type = ['jpg','jpeg'])
 button=st.button("Detect")
 if button:
     if file is not None:
