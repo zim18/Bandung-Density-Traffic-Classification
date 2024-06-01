@@ -8,11 +8,11 @@ import numpy as np
 root_dir=os.path.dirname(os.path.abspath(__file__))
 homepage_img_dir=os.path.join(root_dir,"images","home_page")
 st.title("Klasifikasi Kepadatan Lalu Lintas dengan Model Convolutional Neural Network Menggunakan Arsitektur EfficientNet ")
-col1,col2,col3=st.columns([1,3,1])
-with col2:
-    st.subheader(""" Kelompok 1
+# col1,col2,col3=st.columns([1,3,1])
+# with col2:
+st.subheader(""" Kelompok 1
                  
-                 """)    
+                """)    
 
 st.write("**Kemacetan merupakan situasi atau keadaan tersenatnya yang ditandai dengan menurunnya kecepatan perjalanan dari kecepatan yang seharusnya atau bahkan terhentinya lalu lintas yang disebabkan oleh banyaknya jumlah lalu lintas kendaraan yang melebihih kapasitas jalan.**")
 # st.markdown("""
