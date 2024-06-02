@@ -14,7 +14,11 @@ st.markdown("""
             - Abror Muhammad Hazim (1305213026)""")
 st.write("**Kemacetan merupakan situasi atau keadaan tersenatnya yang ditandai dengan menurunnya kecepatan perjalanan dari kecepatan yang seharusnya atau bahkan terhentinya lalu lintas yang disebabkan oleh banyaknya jumlah lalu lintas kendaraan yang melebihih kapasitas jalan.**")
 st.subheader("Langkah Melakukan Prediksi")
-
+st.markdown("""
+            - Siapkan gambar jalan yang akan di prediksi tingkat kemacetannya
+            - Patikan gambar yang akan di prediksi memiliki format JPG atau JPEG
+            - Drag atau unggah manual gambar yang akan diprediksi pada kolom yang disediakan
+            - Tekan "Detect" dan tunggu hasil prediksinya keluar """)
 # st.markdown("""
 #             - Traffic flows smoothly and efficiently.
 #             - Roads are well maintained and safe for all users, including pedestrians and cyclists.
