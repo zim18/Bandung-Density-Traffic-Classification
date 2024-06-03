@@ -1,12 +1,10 @@
 import streamlit as st
-import urllib.request
 import os
 from PIL import Image
 import cv2
 import numpy as np
-
-# root_dir=os.path.dirname(os.path.abspath(__file__))
-# img_dir=os.path.join(root_dir,"Assets","Images")
+import requests
+from io import BytesIO
 
 st.title("Klasifikasi Kepadatan Lalu Lintas dengan Model Convolutional Neural Network Menggunakan Arsitektur EfficientNet ")
 st.subheader(""" Kelompok 1""")    
@@ -16,14 +14,17 @@ st.markdown("""
             - Abror Muhammad Hazim (1305213026)""")
 
 
+def display_image_from_url(url):
+    response = requests.get(url)
+    img = Image.open(BytesIO(response.content))
+    return img
+
+img_url = "https://raw.githubusercontent.com/zim18/Bandung-Density-Traffic-Classification/d546e5a370e0aadbcdb03305cd5748aa1c00c4d2/Assets/Images/Screenshot(6917).png"
+
 col1,col2=st.columns(2)
 with col1:
-    img_url = "https://raw.githubusercontent.com/zim18/Bandung-Density-Traffic-Classification/d546e5a370e0aadbcdb03305cd5748aa1c00c4d2/Assets/Images/Screenshot(6917).png"
-    with urllib.request.urlopen(img_url) as response:
-        img_data = response.read()    
-    img_pil = Image.open(io.BytesIO(img_data))
-    img_resized = img_pil.resize((480, 480))
-    st.image(img_resized)
+    img = display_image_from_url(img_url)
+    st.image(img, caption='Gambar dari GitHub')
             
 with col2:
     st.write("**Kepadatan lalu lintas merupakan sebuah kondisi ketika jumlah kendaraan yang melintas melebihi kapasitas jalan yang tersedia. Kepadatan ini merupakan salah satu penyebab dari kemacetan yang terjadi terutama pada kota-kota besar. Pada proyek ini kepadatan lalu lintas yang terjadi akan diklasifikasi dengan model Convolutional Neural Network menggunakan Arsitektur EfficientNet menggunakan dataset gambar yang dikumpulkan dari persimpangan jalan Kota Bandung secara manual melalui website CCTV Pemantauan Lingkungan Kota Bandung. **")
