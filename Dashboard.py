@@ -19,7 +19,7 @@ def display_image_from_url(url):
     img = Image.open(BytesIO(response.content))
     return img
 
-img_url = "https://raw.githubusercontent.com/zim18/Bandung-Density-Traffic-Classification/d546e5a370e0aadbcdb03305cd5748aa1c00c4d2/Assets/Images/Screenshot(6917).png"
+img_url = "https://github.com/zim18/Bandung-Density-Traffic-Classification/blob/de1bd6feae9f805ab4146a23945f8b4e12b86494/Assets/Images/Screenshot(6917).png"
 
 col1,col2=st.columns(2)
 with col1:
