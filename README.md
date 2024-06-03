@@ -1,4 +1,4 @@
-# Bandung-Density-Traffic-Classification
+# Bandung Density Traffic Classification
 
 ## Capstone Project Mata Kuliah Proyek Sains Data
 ### Group 1
