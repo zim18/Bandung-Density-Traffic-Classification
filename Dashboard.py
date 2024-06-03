@@ -12,11 +12,14 @@ st.markdown("""
             - Adrian Putra Pratama Badjideh (1305213041)
             - Ade Kurniawan (1305210002)
             - Abror Muhammad Hazim (1305213026)""")
-st.write("**Kepadatan lalu lintas merupakan sebuah kondisi ketika jumlah kendaraan yang melintas melebihi kapasitas jalan yang tersedia. Kepadatan ini merupakan salah satu penyebab dari kemacetan yang terjadi terutama pada kota-kota besar. Pada proyek ini kepadatan lalu lintas yang terjadi akan diklasifikasi dengan model Convolutional Neural Network menggunakan Arsitektur EfficientNet menggunakan dataset gambar yang dikumpulkan dari persimpangan jalan Kota Bandung secara manual melalui website CCTV Pemantauan Lingkungan Kota Bandung. **")
-img_path=os.path.join(homepage_img_dir,"Screenshot (6917).png")
-img=Image.open(img_path)
-img=cv2.resize(np.array(img),(480,480))
-st.image(img)
+col1,col2=st.columns(2)
+with col1:
+    img_path=os.path.join(homepage_img_dir,"Screenshot (6917).png")
+    img=Image.open(img_path)
+    img=cv2.resize(np.array(img),(480,480))
+    st.image(img)
+with col2:
+    st.write("**Kepadatan lalu lintas merupakan sebuah kondisi ketika jumlah kendaraan yang melintas melebihi kapasitas jalan yang tersedia. Kepadatan ini merupakan salah satu penyebab dari kemacetan yang terjadi terutama pada kota-kota besar. Pada proyek ini kepadatan lalu lintas yang terjadi akan diklasifikasi dengan model Convolutional Neural Network menggunakan Arsitektur EfficientNet menggunakan dataset gambar yang dikumpulkan dari persimpangan jalan Kota Bandung secara manual melalui website CCTV Pemantauan Lingkungan Kota Bandung. **")
 st.subheader("Langkah Melakukan Prediksi")
 st.markdown("""
             - Siapkan gambar jalan yang akan di prediksi tingkat kemacetannya
