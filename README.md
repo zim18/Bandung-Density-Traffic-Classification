@@ -1,6 +1,6 @@
 # Bandung Density Traffic Classification
 
-## Capstone Project Mata Kuliah Proyek Sains Data
+## Bandung Traffic Density Classification Using EfficientNet Transfer Learning
 
 ### Group 1
 - Adrian Putra Pratama Badjideh (1305213041)
