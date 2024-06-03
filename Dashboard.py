@@ -19,7 +19,7 @@ with col1:
     st.image("Assets/Images/Screenshot(6917).png")
             
 with col2:
-    st.write("**Kepadatan lalu lintas merupakan sebuah kondisi ketika jumlah kendaraan yang melintas melebihi kapasitas jalan yang tersedia. Kepadatan ini merupakan salah satu penyebab dari kemacetan yang terjadi terutama pada kota-kota besar. Pada proyek ini kepadatan lalu lintas yang terjadi akan diklasifikasi dengan model Convolutional Neural Network menggunakan Arsitektur EfficientNet menggunakan dataset gambar yang dikumpulkan dari persimpangan jalan Kota Bandung secara manual melalui website CCTV Pemantauan Lingkungan Kota Bandung. **")
+    st.write("Kepadatan lalu lintas menyebabkan kemacetan di kota-kota besar karena jumlah kendaraan melintas melebihi kapasitas jalan. Proyek ini akan mengklasifikasi kepadatan lalu lintas menggunakan Convolutional Neural Network dengan Arsitektur EfficientNet, menggunakan dataset gambar dari CCTV Pemantauan Lingkungan Kota Bandung.")
 
 
 st.subheader("Langkah Melakukan Prediksi")
@@ -28,3 +28,6 @@ st.markdown("""
             - Patikan gambar yang akan di prediksi memiliki format JPG atau JPEG
             - Drag atau unggah manual gambar yang akan diprediksi pada kolom yang disediakan
             - Tekan "Detect" dan tunggu hasil prediksinya keluar """)
+
+st.subheader("Link Repositories GitHub")
+st.write("Untuk akses lebih lanjut pada proyek ini, silakan kunjungi repositori GitHub kami di [link GitHub](https://github.com/zim18/Bandung-Density-Traffic-Classification.git).")
