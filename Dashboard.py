@@ -4,17 +4,19 @@ from PIL import Image
 import cv2
 import numpy as np
 
-root_dir=os.path.dirname(os.path.abspath(__file__))
-homepage_img_dir=os.path.join(root_dir,"Assets","Images")
+# root_dir=os.path.dirname(os.path.abspath(__file__))
+# img_dir=os.path.join(root_dir,"Assets","Images")
+
 st.title("Klasifikasi Kepadatan Lalu Lintas dengan Model Convolutional Neural Network Menggunakan Arsitektur EfficientNet ")
 st.subheader(""" Kelompok 1""")    
 st.markdown("""
             - Adrian Putra Pratama Badjideh (1305213041)
             - Ade Kurniawan (1305210002)
             - Abror Muhammad Hazim (1305213026)""")
+
 col1,col2=st.columns(2)
 with col1:
-    img_path=os.path.join(homepage_img_dir,"Screenshot(6917).png")
+    img_path=os.path.join(Assets/Images/Screenshot(6917).png)
     img=Image.open(img_path)
     img=cv2.resize(np.array(img),(480,480))
     st.image(img)
