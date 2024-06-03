@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 
 root_dir=os.path.dirname(os.path.abspath(__file__))
-homepage_img_dir=os.path.join(root_dir,"assets","images")
+homepage_img_dir=os.path.join(root_dir,"Assets","Images")
 st.title("Klasifikasi Kepadatan Lalu Lintas dengan Model Convolutional Neural Network Menggunakan Arsitektur EfficientNet ")
 st.subheader(""" Kelompok 1""")    
 st.markdown("""
