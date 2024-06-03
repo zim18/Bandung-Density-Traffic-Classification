@@ -20,6 +20,8 @@ with col1:
     st.image(img)
 with col2:
     st.write("**Kepadatan lalu lintas merupakan sebuah kondisi ketika jumlah kendaraan yang melintas melebihi kapasitas jalan yang tersedia. Kepadatan ini merupakan salah satu penyebab dari kemacetan yang terjadi terutama pada kota-kota besar. Pada proyek ini kepadatan lalu lintas yang terjadi akan diklasifikasi dengan model Convolutional Neural Network menggunakan Arsitektur EfficientNet menggunakan dataset gambar yang dikumpulkan dari persimpangan jalan Kota Bandung secara manual melalui website CCTV Pemantauan Lingkungan Kota Bandung. **")
+
+
 st.subheader("Langkah Melakukan Prediksi")
 st.markdown("""
             - Siapkan gambar jalan yang akan di prediksi tingkat kemacetannya
