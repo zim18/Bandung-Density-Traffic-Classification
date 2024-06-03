@@ -1,4 +1,5 @@
 import streamlit as st
+import urllib.request
 import os
 from PIL import Image
 import cv2
@@ -14,12 +15,16 @@ st.markdown("""
             - Ade Kurniawan (1305210002)
             - Abror Muhammad Hazim (1305213026)""")
 
+
 col1,col2=st.columns(2)
 with col1:
-    img_path=os.path.join(https://github.com/zim18/Bandung-Density-Traffic-Classification/blob/d546e5a370e0aadbcdb03305cd5748aa1c00c4d2/Assets/Images/Screenshot(6917).png)
-    img=Image.open(img_path)
-    img=cv2.resize(np.array(img),(480,480))
-    st.image(img)
+    img_url = "https://raw.githubusercontent.com/zim18/Bandung-Density-Traffic-Classification/d546e5a370e0aadbcdb03305cd5748aa1c00c4d2/Assets/Images/Screenshot(6917).png"
+    with urllib.request.urlopen(img_url) as response:
+        img_data = response.read()
+    img_array = np.frombuffer(img_data, np.uint8)
+    img_cv = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
+    img_resized = cv2.resize(img_cv, (480, 480))
+    st.image(img_resized, channels="BGR") 
 with col2:
     st.write("**Kepadatan lalu lintas merupakan sebuah kondisi ketika jumlah kendaraan yang melintas melebihi kapasitas jalan yang tersedia. Kepadatan ini merupakan salah satu penyebab dari kemacetan yang terjadi terutama pada kota-kota besar. Pada proyek ini kepadatan lalu lintas yang terjadi akan diklasifikasi dengan model Convolutional Neural Network menggunakan Arsitektur EfficientNet menggunakan dataset gambar yang dikumpulkan dari persimpangan jalan Kota Bandung secara manual melalui website CCTV Pemantauan Lingkungan Kota Bandung. **")
 
