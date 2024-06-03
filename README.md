@@ -1,12 +1,14 @@
 # Bandung Density Traffic Classification
 
 ## Capstone Project Mata Kuliah Proyek Sains Data
+
 ### Group 1
 - Adrian Putra Pratama Badjideh (1305213041)
 - Ade Kurniawan (1305210002)
 - Abror Muhammad Hazim (1305213026)
 
 ### Introduction
+![https://github.com/zim18/Bandung-Density-Traffic-Classification/blob/b2806a9bbcdb71b0665934fb33527a3da5140750/Assets/Images/Screenshot%20(6917).png](https://github.com/zim18/Bandung-Density-Traffic-Classification/blob/b2806a9bbcdb71b0665934fb33527a3da5140750/Assets/Images/Screenshot%20(6917).png)
 > Traffic congestion is a condition when the number of vehicles traveling exceeds the available road capacity. This density is one of the causes of congestion that occurs especially in big cities. In this project, traffic density will be classified with Convolutional Neural Network model using EfficientNet Architecture using image dataset collected from Bandung City road intersections manually through Website CCTV Pemantauan Lingkungan Kota Bandung (PELINDUNG).
 
 ### Methodology
