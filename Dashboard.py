@@ -16,7 +16,7 @@ st.markdown("""
 
 col1,col2=st.columns(2)
 with col1:
-    img_path=os.path.join(Assets/Images/Screenshot(6917).png)
+    img_path=os.path.join(https://github.com/zim18/Bandung-Density-Traffic-Classification/blob/d546e5a370e0aadbcdb03305cd5748aa1c00c4d2/Assets/Images/Screenshot(6917).png)
     img=Image.open(img_path)
     img=cv2.resize(np.array(img),(480,480))
     st.image(img)
