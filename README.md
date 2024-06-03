@@ -14,4 +14,7 @@
 
 > EfficientNet ingeniously integrates the strengths of MobileNet and ResNet models to construct a highly efficient model that excels in understanding high-quality images. One of the standout features of EfficientNet is its use of compound scaling, which adeptly addresses the challenges associated with ineffective scaling in conventional convolutional models. By scaling all dimensions of the network (depth, width, and resolution) simultaneously and in a principled manner, EfficientNet achieves superior performance with fewer computational resources.
 
-### 
+![Assets/Images/EfficientNet architecture.png](https://github.com/zim18/Bandung-Density-Traffic-Classification/blob/5c683b13ee20ec3a82dab1f4042478b060f43503/Assets/Images/EfficientNet%20architecture.png)
+
+### Dashboard
+[Link to Streamlit Dashboard](https://bandung-density-traffic-classification-obs895fj6t6ttf2rakkvtx.streamlit.app/)
