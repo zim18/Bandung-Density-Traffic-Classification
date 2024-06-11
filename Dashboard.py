@@ -29,5 +29,9 @@ st.markdown("""
             - Drag atau unggah manual gambar yang akan diprediksi pada kolom yang disediakan
             - Tekan "Detect" dan tunggu hasil prediksinya keluar """)
 
+st.subheader("Hasil Prediksi")
+st.image("Assets/Images/results.png")
+
+
 st.subheader("Link Repositories GitHub")
 st.write("Untuk akses lebih lanjut pada proyek ini, silakan kunjungi repositori GitHub kami di [link GitHub](https://github.com/zim18/Bandung-Density-Traffic-Classification.git).")
